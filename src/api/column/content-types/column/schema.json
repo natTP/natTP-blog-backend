@@ -1,19 +1,22 @@
 {
   "kind": "collectionType",
-  "collectionName": "categories",
+  "collectionName": "columns",
   "info": {
-    "singularName": "category",
-    "pluralName": "categories",
-    "displayName": "Category",
-    "description": "Organize your content into categories"
+    "singularName": "column",
+    "pluralName": "columns",
+    "displayName": "Column",
+    "description": ""
   },
   "options": {
-    "draftAndPublish": false
+    "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
     "name": {
       "type": "string"
+    },
+    "description": {
+      "type": "text"
     },
     "slug": {
       "type": "uid"
@@ -22,10 +25,7 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::article.article",
-      "mappedBy": "category"
-    },
-    "description": {
-      "type": "text"
+      "mappedBy": "column"
     }
   }
 }

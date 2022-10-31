@@ -15,14 +15,6 @@
     "title": {
       "type": "string"
     },
-    "description": {
-      "type": "text",
-      "maxLength": 80
-    },
-    "slug": {
-      "type": "uid",
-      "targetField": "title"
-    },
     "cover": {
       "type": "media",
       "multiple": false,
@@ -45,7 +37,7 @@
         "shared.media",
         "shared.quote",
         "shared.rich-text",
-        "shared.slider"
+        "shared.embedded-video"
       ]
     },
     "column": {
@@ -59,6 +51,14 @@
       "relation": "manyToMany",
       "target": "api::tag.tag",
       "inversedBy": "articles"
+    },
+    "references": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.reference"
+    },
+    "likes": {
+      "type": "integer"
     }
   }
 }

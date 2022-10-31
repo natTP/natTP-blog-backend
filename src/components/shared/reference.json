@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_article_references",
+  "info": {
+    "displayName": "Reference",
+    "icon": "book-open",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "dateCreated": {
+      "type": "date"
+    },
+    "dateAccessed": {
+      "type": "date"
+    },
+    "author": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "book",
+        "link"
+      ]
+    },
+    "link": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_shared_embedded_videos",
+  "info": {
+    "displayName": "embeddedVideo",
+    "icon": "caret-square-right"
+  },
+  "options": {},
+  "attributes": {
+    "link": {
+      "type": "string"
+    }
+  }
+}

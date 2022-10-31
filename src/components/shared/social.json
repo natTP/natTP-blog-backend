@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_shared_socials",
+  "info": {
+    "displayName": "Social",
+    "icon": "external-link-alt"
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "facebook",
+        "twitter",
+        "instagram",
+        "youtube",
+        "github"
+      ]
+    },
+    "username": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    }
+  }
+}

@@ -12,14 +12,11 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
+    "title": {
       "type": "string"
     },
     "description": {
       "type": "text"
-    },
-    "slug": {
-      "type": "uid"
     },
     "articles": {
       "type": "relation",

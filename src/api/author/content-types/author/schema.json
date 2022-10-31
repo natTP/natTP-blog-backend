@@ -12,7 +12,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
+    "title": {
       "type": "string"
     },
     "avatar": {
@@ -25,14 +25,19 @@
         "videos"
       ]
     },
-    "email": {
-      "type": "string"
+    "description": {
+      "type": "text"
     },
     "articles": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::article.article",
       "mappedBy": "author"
+    },
+    "socials": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.social"
     }
   }
 }

@@ -59,6 +59,9 @@
     },
     "likes": {
       "type": "integer"
+    },
+    "slug": {
+      "type": "string"
     }
   }
 }

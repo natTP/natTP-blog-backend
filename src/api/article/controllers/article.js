@@ -8,14 +8,18 @@ const { createCoreController } = require("@strapi/strapi").factories;
 
 module.exports = createCoreController("api::article.article", ({ strapi }) => ({
   random: async (ctx) => {
-    return { message: "hello" };
-    // const result = await strapi
-    //   .query("article")
-    //   .model.query((qb) => {
-    //     qb.orderByRaw("RANDOM()");
-    //   })
-    //   .fetchAll();
+    const query = ctx.request.query;
+    const DEFAULT_LIMIT = 3;
+    const limit = query.limit || DEFAULT_LIMIT;
+    const excludedIds = query.exclude ? [query.exclude] : [];
 
-    // return result.toJSON();
+    const result = await strapi.db.connection
+      .select("*")
+      .from("articles")
+      .whereNotIn("id", excludedIds)
+      .orderByRaw("RANDOM()")
+      .limit(limit);
+
+    return result;
   },
 }));

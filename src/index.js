@@ -1,5 +1,6 @@
 "use strict";
 const bootstrap = require("./bootstrap");
+const graphql = require("./graphql");
 
 module.exports = {
   /**
@@ -8,7 +9,9 @@ module.exports = {
    *
    * This gives you an opportunity to extend code.
    */
-  register(/*{ strapi }*/) {},
+  register({ strapi }) {
+    graphql(strapi);
+  },
 
   /**
    * An asynchronous bootstrap function that runs before

@@ -29,9 +29,6 @@ module.exports =
                 .limit(limit)
             ).map((it) => it.id);
 
-            console.log(limit, excludedIds);
-            console.log(ids);
-
             const data = await strapi.entityService.findMany(
               "api::article.article",
               {

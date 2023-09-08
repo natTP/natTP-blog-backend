@@ -8,7 +8,9 @@
     "better-sqlite3": "7.4.6",
     "fs-extra": "^10.0.0",
     "lodash.set": "^4.3.2",
-    "mime-types": "^2.1.27"
+    "mime-types": "^2.1.27",
+    "pg": "^8.11.3",
+    "pg-connection-string": "^2.6.2"
   },
   "name": "nat-tp-blog-backend",
   "private": true,

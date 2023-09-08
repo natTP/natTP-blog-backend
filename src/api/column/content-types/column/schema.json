@@ -26,6 +26,9 @@
     },
     "slug": {
       "type": "string"
+    },
+    "tagline": {
+      "type": "string"
     }
   }
 }

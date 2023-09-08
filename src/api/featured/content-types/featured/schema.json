@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "featureds",
+  "info": {
+    "singularName": "featured",
+    "pluralName": "featureds",
+    "displayName": "Featured",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "articles": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::article.article"
+    }
+  }
+}

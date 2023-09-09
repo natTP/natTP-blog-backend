@@ -4,6 +4,7 @@
     "@strapi/plugin-i18n": "4.12.0",
     "@strapi/plugin-seo": "^1.9.5",
     "@strapi/plugin-users-permissions": "4.12.0",
+    "@strapi/provider-upload-cloudinary": "^4.14.0-alpha.0",
     "@strapi/strapi": "4.12.0",
     "better-sqlite3": "7.4.6",
     "fs-extra": "^10.0.0",

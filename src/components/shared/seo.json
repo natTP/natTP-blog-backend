@@ -14,7 +14,7 @@
       "default": "Test"
     },
     "metaDescription": {
-      "type": "string",
+      "type": "text",
       "required": true,
       "maxLength": 160,
       "minLength": 50,

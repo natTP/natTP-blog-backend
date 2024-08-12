@@ -34,6 +34,13 @@
       "type": "component",
       "repeatable": false,
       "component": "shared.seo"
+    },
+    "order": {
+      "type": "integer",
+      "required": true,
+      "unique": true,
+      "min": 0,
+      "default": -2
     }
   }
 }

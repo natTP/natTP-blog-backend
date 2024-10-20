@@ -2,7 +2,8 @@
   "collectionName": "components_shared_socials",
   "info": {
     "displayName": "Social",
-    "icon": "external-link-alt"
+    "icon": "external-link-alt",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -11,6 +12,7 @@
       "enum": [
         "facebook",
         "twitter",
+        "bluesky",
         "instagram",
         "youtube",
         "github"
